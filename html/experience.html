@@ -24,7 +24,7 @@
                 </div>
                 <li><a style="color: white" >|</a></li>
                 <li><a href="profil.html"><img class="icon-nav" src="../assets/images/icon-profil.png">Profil</a></li>
-                <li><a href="experience.html"><img class="icon-nav" src="../assets/images/icon-exp.png">Expérience</a></li>
+                <li><a class="actv" href="experience.html"><img class="icon-nav" src="../assets/images/icon-exp.png">Expérience</a></li>
                 <li><a href="projets.html"><img class="icon-nav" src="../assets/images/icon-projet.png">Projets</a></li>
                 <li><a style="color: white" >|</a></li>
             </ul>
@@ -46,7 +46,7 @@
         <h1>>Mes expériences professionelles</h1>
         <div>
             <div class="form-group">
-                <p>Vas voir mes expériences professionelles <a href="#exp"><b>ici</b></a> !</p>
+                <p>Allez voir mes expériences professionelles <a href="#exp"><b>ici</b></a> !</p>
             </div>
         </div>
     </div>
@@ -61,30 +61,78 @@
         <div class="card shadowEffect">
             <h2>>SP1 : Stage Professionnelle BTS-SIO SLAM</h2>
             <hr>
-            <h3>Tennaxia | 22/05 - 30/06 2023</h3>
+            <h3><u>Tennaxia | 22/05 - 30/06 2023</u></h3><br><br>
+
+            <h4>Contexte :</h4>
+            <p>
+                Tennaxia est une entreprise Parisienne crée en 2001 composé d'une centaine de salarié. Elle est divisé en 3 bureaux : Paris, Laval et Lyon et est une entreprise en
+                constante croissance. Elle propose un service d'applications avec différentes options permettant à l'entreprise cliente de voir ses données triées et retourné sous
+                forme de statistique concernant leurs émissions de CO<sub>2</sub>sur différentes durées, sites et autres critères. Ou encore des données comme celle concernant la
+                partie RSE (part de femmes dans l'entreprise) de l'entreprise cliente, le tout disponible en temps réel sur un espace dédié.<br>
+                Ces données vont servir de base à l'entreprise cliente afin d'établir des bilans sur leurs émissions de gaz à effet de serre et ainsi adapter leur façon de produire.
+                Tout cela dans le but aux normes environnementales fixées par l'état et par la meme occasion avoir un meilleur recul sur la gestion de l'entreprise elle-meme.
+            </p>
+            <br>
+
+            <h4>Mes objectifs de stage :</h4>
+            <ul>
+                <li>
+                    <b>L</b>a réalisation d’une interface web accessible depuis une icone du bureau de l'utilisateur. Cetta page a pour but de de guider l'utilisateur sur ce
+                    q'il doit faire en cas de problème (urgence ou non). Ce travail doit etre fait uniquement à l'aide de code HTML et CSS.<br>
+                    La création d'une nouvelle interface a pour but d'orienter les utilisateur ayant besoin d'aide à contacter la bonne personne de l'équipe SI afin d'accélérer la prise
+                    en charge des demandes.
+                </li>
+                <li>
+                    <b>L</b>a création de fichiers script PowerShell(PS1) permettant l'installation du package contenant toutes les ressources néccessaires au bon fonctionnement de l'interface
+                    ( fichier .html, .css, images, icones, etc) mais également la désinstallation du package.<br>
+                    Un script de vérification d'installation sera aussi néccessaire car il permet au Portail d'entreprise (application pour les entreprises regroupant un groupe
+                    d'applications ajoutées et autorisés par le service SI) de s'assurer que l'utilisateur
+                    possède la version de l'interface la plus récente.
+                </li>
+                <li>
+                    <b>L</b>'inventaire du matériel informatique des employés dans les bureaux de paris à l'aide de l'application GLPI. Cette application permet le répèrtoriage de tout type
+                    de données avec par exemple les tickets GLPI venant d'utilisateur ayant fait une demande auprés de l'équipe SI ou bien la liste complète du
+                    matériel disponible / en cours d'utilisation sur les 3 sites de l'entreprise).
+                </li>
+            </ul>
+            <br>
+
+            <h5>- Partie Interface :</h5>
+            <p>
+                Le résultat attendu : En cas de soucis, l'utilisateur clique sur une icône sur le bureau. Cela va aller chercher le fichier .html qui sera installé avec le package et
+                l'ouvrira dans le navigateur. La page web est offline (pas besoin d'accès à internet pour la faire fonctionner) et va donner les consignes que l'user doit suivre en fonction de sa demande.<br>
+                L'interface doit avoir une apparence moderne et être intuitif afin de guider l’utilisateur en cas de demande mineure ou urgente et donc faciliter la prise en charge de
+                sa demande. Elle se divise en 2 onglets :
+            </p>
+            <ul>
+                <li>Le premier onglet : "Demande standard" pour les problèmes légers à modéré comme un problème d'accès, un problème de matériel informatique ou un bug dans l'application.</li>
+                <li>Le deuxième onglet : "Demande urgente" pour les 4 types d'urgences citées sur la page (voir image annexe).</li>
+            </ul>
+            <br>
 
             <p>
-                <b>Contexte :</b> En région parisienne, Tennaxia, une entreprise en constante croissance aide les entreprises à mieux gérer leurs déchets et contrôler les émissions
-                de CO<sub>2</sub> afin de respecter les nouvelles normes environnementales mise en place par l’état.
+                Création de l’interface de A à Z en full HTML CSS et la création d’un script PowerShell permettant l’installation, la désinstallation et la vérification d’installation.
             </p>
+            <br><br>
+
+            <h5>- Partie inventaire</h5>
             <p>
-                <b>Ojectif du stage :</b> Réalisation d’une interface web au look moderne et intuitive afin de guider l’utilisateur en cas
-                de demande mineur ou urgente et donc faciliter la prise en charge de sa demande. Page devant être accessible via une icône sur le bureau de l’utilisateur. Une autre
-                mission complémentaire était le répertoriage du matériel en cours d'utilisation dans les bureaux à l'aide de l'outil <u>GLPI</u>.
-                <br>
-                Création de l’interface de A à Z en full HTML CSS suivit de la création d’un script PowerShell permettant l’installation, la désinstallation et la vérification d’installation
-                via le portail d’entreprise.
-                <br>
+                Une autre partie du stage a consisté à faire l'inventaire du matériel informatique nouvellement reçu, celui en cours d'utilisation ainsi que celui en stockage via l'outil GLPI.
             </p>
+            <br>
+
             <i>
-                <b>Langages utilisés :</b> <img src="../assets/images/logo-html.png"> <img src="../assets/images/logo-css.png"> <img src="../assets/images/logo-ps1.png">
+                <b>Langages de programmation utilisés :</b> <img src="../assets/images/logo-html.png"> <img src="../assets/images/logo-css.png"> <img src="../assets/images/logo-ps1.png">
             </i>
             <hr>
             <div class="row photos">
                 <div class="col-sm-6 col-md-4 col-lg-3 item">Avant :<a href="../assets/images/SSoldP.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSoldP.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item">Apres 1/2 :<a href="../assets/images/SSnewP1.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSnewP1.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item">Apres 2/2 :<a href="../assets/images/SSnewP2.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSnewP2.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item">Apres 1/4 :<a href="../assets/images/SSnewP1.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSnewP1.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item">Apres 2/4 :<a href="../assets/images/SSnewP2.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSnewP2.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item">Apres 3/4 :<a href="../assets/images/SSnewP3.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSnewP3.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item">Apres 4/4 :<a href="../assets/images/SSnewP4.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSnewP4.png"></a></div>
                 <div class="col-sm-6 col-md-4 col-lg-3 item">Script PowerShell :<a href="../assets/images/SSps1.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSps1.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item">Icon sur le bureau :<a href="../assets/images/SSicon.png" data-lightbox="photos"><img class="img-fluid" src="../assets/images/SSicon.png"></a></div>
             </div>
         </div>
         <div class="card shadowEffect">
@@ -101,17 +149,31 @@
         <div class="card shadowEffect">
             <h2>>A propos de moi</h2>
             <!--<div class="fakeimg" style="height:auto;">Image</div>-->
-            <p><b>Expérience professionnel :</b></p>
+            <p><b>Expérience professionnelle :</b></p>
             <ul>
-                <li>Job d'été à l'ESI Noisiel - Juillet 2023</li>
+                <li>
+                    Job d'été à l'ESI Noisiel - Juillet 2023
+                    <ul>
+                        <li>Service logistique : préparation commandes matériels informatique, accompagnement pour livraison</li>
+                    </ul>
+                </li>
+                <li>
+                    À suivre...
+                </li>
             </ul>
         </div>
 
         <div class="card shadowEffect">
-            <h3>Popular Post</h3>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
+            <h3>>Titre (En dev)</h3>
+            <div class="fakeimg" style="display: inline-block">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only">o</span>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>

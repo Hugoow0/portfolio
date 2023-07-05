@@ -66,6 +66,9 @@
 .menu-list li a:hover{
     color: #007bff;
 }
+.menu-list li a.actv{
+    color: #888888;
+}
 .banner{
     background: url("banner.jpg") no-repeat;
     height: 100vh;

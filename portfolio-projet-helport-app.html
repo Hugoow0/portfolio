@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <title>Portfolio Hugo - HELPORT-APP</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -87,78 +87,79 @@
 
 
 
+          <div style="color: grey">
+            <h4>Contexte :</h4>
+            <p>
+              Le service Scolarité de l’ORT Montreuil veut offrir à ses étudiants, de la <b>terminale au BAC+5</b>,
+              un service informatisé d’entraide purement pédagogique (aide aux devoirs, TP, ou bien à mieux comprendre un cours).
+              Il met donc à leur disposition une assistance personnalisée dans la ou les matières de leurs choix.<br><br>
 
-          <h4>Contexte :</h4>
-          <p>
-            Le service Scolarité de l’ORT Montreuil veut offrir à ses étudiants, de la <b>terminale au BAC+5</b>,
-            un service informatisé d’entraide purement pédagogique (aide aux devoirs, TP, ou bien à mieux comprendre un cours).
-            Il met donc à leur disposition une assistance personnalisée dans la ou les matières de leurs choix.<br><br>
+              Ce service sera utilisé dans les locaux de ORT Montreuil. Le service scolarité encadrera les affectations des salles,
+              en fonction de leur disponibilité, aux différents besoins d’entraide formulés.<br><br>
 
-            Ce service sera utilisé dans les locaux de ORT Montreuil. Le service scolarité encadrera les affectations des salles,
-            en fonction de leur disponibilité, aux différents besoins d’entraide formulés.<br><br>
+              Ce service à informatiser est baptisé <b>HelpORT</b>
+            </p>
+            <br>
 
-            Ce service à informatiser est baptisé <b>HelpORT</b>
-          </p>
-          <br>
+            <h4>Les fonctionnalités (SLAM)</h4>
+            <p>
+              Ce service est fondé sur l’offre et la demande. Un étudiant va énumérer et présenter les compétences qu'il peut partager. Un autre étudiant, va faire une demande d’aide.<br>
+              Il y a 2 types d’utilisateurs : Administrateur / Étudiant. La propriété « rôle » permettra de distinguer ces 2 types.
+            </p><br>
 
-          <h4>Les fonctionnalités (SLAM)</h4>
-          <p>
-            Ce service est fondé sur l’offre et la demande. Un étudiant va énumérer et présenter les compétences qu'il peut partager. Un autre étudiant, va faire une demande d’aide.<br>
-            Il y a 2 types d’utilisateurs : Administrateur / Étudiant. La propriété « rôle » permettra de distinguer ces 2 types.
-          </p><br>
+            <p>👉 Règle fonctionnelle : un étudiant peut porter une assistance à un étudiant d’un niveau inférieure à lui. Il faut au moins 2 ans d’étude pour être</p>
+            <i>Exemple :</i>
+            <ul>
+              <li>Un étudiant en Bachelor (Bac+3) peut aider des BTS (1e année) et des terminales.</li>
+              <li>Un étudiant en BTS 2e année peut aider et des terminales.</li>
+            </ul>
 
-          <p>👉 Règle fonctionnelle : un étudiant peut porter une assistance à un étudiant d’un niveau inférieure à lui. Il faut au moins 2 ans d’étude pour être</p>
-          <i>Exemple :</i>
-          <ul>
-            <li>Un étudiant en Bachelor (Bac+3) peut aider des BTS (1e année) et des terminales.</li>
-            <li>Un étudiant en BTS 2e année peut aider et des terminales.</li>
-          </ul>
+            <br>
+            <p>👉 Règle fonctionnelle : pour la version 1, nous allons nous restreindre sur les matières générales</p>
+            <ul>
+              <li>Français</li>
+              <li>Maths</li>
+              <li>Anglais</li>
+            </ul>
 
-          <br>
-          <p>👉 Règle fonctionnelle : pour la version 1, nous allons nous restreindre sur les matières générales</p>
-          <ul>
-            <li>Français</li>
-            <li>Maths</li>
-            <li>Anglais</li>
-          </ul>
+            <br>
+            <p>Un étudiant peut faire une demande d’aide. Pour cela, il définit quelques informations :</p>
+            <ul>
+              <li>Une date de fin est obligatoire, si un étudiant fait une demande, c’est parce qu’il a un réel besoin (devoir, partiel, …). Par conséquent, la demande est limitée dans le temps.</li>
+              <li>Une id de matière : la demande porte obligatoirement sur une matière : anglais, mathématiques, français</li>
+            </ul>
 
-          <br>
-          <p>Un étudiant peut faire une demande d’aide. Pour cela, il définit quelques informations :</p>
-          <ul>
-            <li>Une date de fin est obligatoire, si un étudiant fait une demande, c’est parce qu’il a un réel besoin (devoir, partiel, …). Par conséquent, la demande est limitée dans le temps.</li>
-            <li>Une id de matière : la demande porte obligatoirement sur une matière : anglais, mathématiques, français</li>
-          </ul>
+            <br>
+            <p>Pour assurer un suivi des demandes et des soutiens :</p>
+            <ul>
+              <li>“date_updated” correspond à la date de création et de date de mise à jour</li>
+            </ul>
 
-          <br>
-          <p>Pour assurer un suivi des demandes et des soutiens :</p>
-          <ul>
-            <li>“date_updated” correspond à la date de création et de date de mise à jour</li>
-          </ul>
-
-          <br>
-          <p>Pour mettre du détail dans la recherche de match entre Demande et Compétence :</p>
-          <ul>
-            <li>“sous_matiere” : chaque matière possède certaines compétences.<br>
-              Exemple : pour la matière “Anglais”, les compétences sont les suivantes : #verbesirréguliers;#gérondif;#présent;#date;#nombres</li>
-          </ul>
+            <br>
+            <p>Pour mettre du détail dans la recherche de match entre Demande et Compétence :</p>
+            <ul>
+              <li>“sous_matiere” : chaque matière possède certaines compétences.<br>
+                Exemple : pour la matière “Anglais”, les compétences sont les suivantes : #verbesirréguliers;#gérondif;#présent;#date;#nombres</li>
+            </ul>
 
 
-          <br>
-          <p>👉 Règle fonctionnelle : Les sous-matières sont</p>
-          <ul>
-            <li>administrées par le rôle “Admin”</li>
-            <li>Chaque étudiant va sélectionner les sous matières qui veut mettre à disposition</li>
-            <li>Chaque étudiant qui veut faire une demande de soutien va sélectionner les sous matières qui souhaite</li>
-            <li>Un étudiant ne peut pas rajouter une sous matière</li>
-          </ul>
+            <br>
+            <p>👉 Règle fonctionnelle : Les sous-matières sont</p>
+            <ul>
+              <li>administrées par le rôle “Admin”</li>
+              <li>Chaque étudiant va sélectionner les sous matières qui veut mettre à disposition</li>
+              <li>Chaque étudiant qui veut faire une demande de soutien va sélectionner les sous matières qui souhaite</li>
+              <li>Un étudiant ne peut pas rajouter une sous matière</li>
+            </ul>
 
-          <hr>
-          <i>
-            Ce stage de 6 semaines m'a permis de découvrir le monde professionnel dans mon domaine : l'informatique. J'ai pu mettre en application des notions
-            de programmations apprises en cours. Cette première expérience m'a conforté dans mon projet professionnel orienté vers le développement.
-          </i>
-          <hr>
-          <i><b>Languages et outils utilisés :</b></i>
+            <hr>
+            <i>
+              Ce stage de 6 semaines m'a permis de découvrir le monde professionnel dans mon domaine : l'informatique. J'ai pu mettre en application des notions
+              de programmations apprises en cours. Cette première expérience m'a conforté dans mon projet professionnel orienté vers le développement.
+            </i>
+            <hr>
+          </div>
+
 
 
 
@@ -177,16 +178,15 @@
           <hr>
 
           <ul>
-            <li><strong>Catégorie</strong>: Web FrontEnd/BackEnd</li>
-            <li><strong>Date de projet</strong>: 2022/2024</li>
+            <li><strong>Catégorie</strong>: APP FrontEnd/BackEnd</li>
+            <li><strong>Date de projet</strong>: 2023/2024</li>
             <li><strong>Languages et outils utilisée</strong>:<br>
               <iconify-icon icon="vscode-icons:file-type-css" width="32" height="32"></iconify-icon>
               <iconify-icon icon="logos:mysql" width="32" height="32"></iconify-icon>
               <iconify-icon icon="logos:java" width="32" height="32"></iconify-icon>
-
               <!--<iconify-icon icon="devicon:bootstrap" width="32" height="32"></iconify-icon>-->
             </li>
-            <li><strong>Site de l'entreprise</strong>: <a href="https://www.exemple.com/">https://www.exemple.com/</a></li>
+            <!-- <li><strong>Site de l'entreprise</strong>: <a href="https://www.exemple.com/">https://www.exemple.com/</a></li> -->
           </ul>
           <hr>
 
@@ -205,7 +205,7 @@
   <!-- You can delete the links only if you purchased the pro version. -->
   <!-- Licensing information: https://bootstrapmade.com/license/ -->
   <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  <p style="opacity: 15%">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
 </div>
 
 <!-- Vendor JS Files -->

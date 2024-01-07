@@ -978,9 +978,23 @@ section .container {
   padding: 15px 0 0 0;
 }
 
+
+.test-top{
+  display: none;
+}
+.test-end{
+  display: initial;
+}
+
 @media (max-width: 1080px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
+  }
+  .test-top {
+    display: initial;
+  }
+  .test-end {
+    display: none;
   }
 }
 
@@ -1165,7 +1179,7 @@ section .container {
   right: 0;
   left: 0;
   bottom: 0;
-  padding: 15px;
+  padding: 10px;
   text-align: right;
   font-size: 13px;
   color: #fff;
